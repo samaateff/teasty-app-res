@@ -1,13 +1,6 @@
-
-
 function App() {
-
-  return (
-    <>
-      <h1>Hello World ! Ghandy</h1>
-    </>
-  )
+	return <></>;
 }
 
-export default App
+export default App;
 // sama
