@@ -1,15 +1,15 @@
-import Navbar from "./components/Navbar"
-import Footer from "./components/Footer"
-import Home from "./pages/Home"
-import { Outlet } from "react-router-dom"
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+
+import { Outlet } from 'react-router-dom';
 function AppLayout() {
-    return (
-       <>
-       <Navbar />
-       <Outlet />
-       <Footer />
-       </>
-    )
+	return (
+		<>
+			<Navbar />
+			<Outlet />
+			<Footer />
+		</>
+	);
 }
 
-export default AppLayout
+export default AppLayout;

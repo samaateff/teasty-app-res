@@ -1,25 +1,18 @@
-import AppLayout from "./AppLayout";
-import { BrowserRouter , Routes , Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Menu from "./pages/Menu";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import AppLayout from './AppLayout';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
 
 function App() {
 	return (
-  
-    <BrowserRouter>
-   <Routes>
-   <Route element={AppLayout}>
-    <Route path='/' element={<Home/>}/>
-   </Route>
-   </Routes>
-  </BrowserRouter>
-  
-
-  )
+		<BrowserRouter>
+			<Routes>
+				<Route element={<AppLayout />}>
+					<Route path='/' element={<Home />} />
+				</Route>
+			</Routes>
+		</BrowserRouter>
+	);
 }
-
 
 // function App() {
 // 	return (
@@ -36,6 +29,5 @@ function App() {
 //   )
 // }
 
-
-export default App
+export default App;
 // sama
