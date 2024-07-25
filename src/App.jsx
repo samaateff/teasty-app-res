@@ -1,13 +1,24 @@
 import AppLayout from './AppLayout';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
+import Menu from './pages/Menu';
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
+import DailyOffers from './pages/DailyOffers';
+import Location from './pages/Location';
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
 				<Route element={<AppLayout />}>
-					<Route path='/' element={<Home />} />
+          <Route index element={<Navigate replace to="home" />} />
+					<Route path='home' element={<Home />} />
+          <Route path='menu' element={<Menu />} />
+          <Route path='aboutus' element={<AboutUs />} />
+          <Route path='contactus' element={<ContactUs />} />
+          <Route path='dailyoffers' element={<DailyOffers />} />
+          <Route path='location' element={<Location />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>
