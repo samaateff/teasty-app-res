@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 :root{
-    --primary-color: #9F3639;
-    --secondary-color:#AE5737;
+    --primary-color:#9F3639;    ;
+    --secondary-color:#A6433A;
     --color-white: #FFFFFF;
 }
 
@@ -28,8 +28,4 @@ body {
         url('../../public/overlay.png');
     background-size: cover; /* Ensure the overlay image covers the entire area */
     background-blend-mode: overlay; /* Blend the image with the gradient */
-}
-body:after{
-    content: "";
-    position: absolute;
 }
