@@ -45,10 +45,18 @@ function Navbar() {
 					</button>
 				</div> */}
 
-				<BellIcon />
-				<CartIcon />
-				<FavIcon />
-				<UserIcon />
+				<div className={styles.userIcons}>
+					<BellIcon />
+				</div>
+				<div className={styles.userIcons}>
+					<CartIcon />
+				</div>
+				<div className={styles.userIcons}>
+					<FavIcon />
+				</div>
+				<div className={styles.userIcons}>
+					<UserIcon />
+				</div>
 				<div className={styles.checkMenuBtn}>
 					<FoodIcon />
 					<span>CHECK OUR MENU</span>
