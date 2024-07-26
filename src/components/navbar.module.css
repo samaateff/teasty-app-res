@@ -34,12 +34,9 @@
 	gap: 5rem;
 	/* padding: 4rem 0; */
 }
-.navright {
-	gap: 2rem;
-}
 
-.navright {
-}
+
+
 .navright button {
 	border-radius: 0.5rem;
 	padding: 1.5rem 2rem;
@@ -85,4 +82,38 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+	padding: 0 1.5rem;
+}
+.userMenu{
+	position: absolute;
+	bottom:-15rem;
+	color: #000;
+	width: 20rem;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	padding: 3rem 0;
+	/* background: #000; */
+}
+.userMenu ul {
+	background-color: var(--color-white);
+}
+.userMenu li{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem;
+}
+.userMenu li img {
+	border-radius: 0.5rem;
+}
+.userMenu li div {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+.userMenu li:hover{
+	background: radial-gradient(50% 50% at 50% 50%, #d94108 0%, #bb4042 100%);
 }

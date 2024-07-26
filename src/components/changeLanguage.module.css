@@ -15,7 +15,8 @@
     right: 0;
     border-radius: 0.5rem;
     padding: 0.5rem;
-    top: 7rem;
+    /* top: 7rem; */
+    bottom: -1rem;
 }
 .changeLang ul li{
 padding: 1rem 3rem;
@@ -32,7 +33,7 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
 }
-svg{
+.changeLang svg{
     display: inline-block;
     width: 1.7rem;
     height: 1.7rem;
