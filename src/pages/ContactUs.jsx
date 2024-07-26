@@ -1,9 +1,5 @@
 function ContactUs() {
-    return (
-        <div>
-            contactus
-        </div>
-    )
+	return <div>contactus</div>;
 }
 
-export default ContactUs
+export default ContactUs;

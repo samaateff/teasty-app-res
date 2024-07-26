@@ -14,15 +14,15 @@ function App() {
 		<BrowserRouter>
 			<Routes>
 				<Route element={<AppLayout />}>
-          <Route index element={<Navigate replace to="home" />} />
+					<Route index element={<Navigate replace to='home' />} />
 					<Route path='home' element={<Home />} />
-          <Route path='menu' element={<Menu />} />
-          <Route path='aboutus' element={<AboutUs />} />
-          <Route path='contactus' element={<ContactUs />} />
-          <Route path='dailyoffers' element={<DailyOffers />} />
-          <Route path='location' element={<Location />} />
-          <Route path='signup' element={<SignUp />} />
-          <Route path='login' element={<LogIn />} />
+					<Route path='menu' element={<Menu />} />
+					<Route path='aboutus' element={<AboutUs />} />
+					<Route path='contactus' element={<ContactUs />} />
+					<Route path='dailyoffers' element={<DailyOffers />} />
+					<Route path='location' element={<Location />} />
+					<Route path='signup' element={<SignUp />} />
+					<Route path='login' element={<LogIn />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

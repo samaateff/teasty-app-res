@@ -1,9 +1,5 @@
 function LogIn() {
-    return (
-        <div>
-            log in
-        </div>
-    )
+	return <div>log in</div>;
 }
 
-export default LogIn
+export default LogIn;

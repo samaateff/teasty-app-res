@@ -1,9 +1,5 @@
 function Location() {
-    return (
-        <div>
-            location
-        </div>
-    )
+	return <div>location</div>;
 }
 
-export default Location
+export default Location;

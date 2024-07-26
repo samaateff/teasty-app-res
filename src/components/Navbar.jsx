@@ -39,19 +39,19 @@ function Navbar() {
 				</ul>
 			</div>
 			<div className={styles.navright}>
-				{/* <div className={styles.btnReg}>
+				<div className={styles.btnReg}>
 					<button className={styles.signUp} onClick={() => navigate('/signup')}>
 						sign up
 					</button>
 					<button className={styles.logIn} onClick={() => navigate('/login')}>
 						log in
 					</button>
-				</div> */}
-				<NotifactionNav />
+				</div>
+				{/* <NotifactionNav />
 				<CartNav />
 				<FavoriteNav />
 				<UserNav />
-				<MenuBtnNav />
+				<MenuBtnNav /> */}
 			</div>
 		</nav>
 	);

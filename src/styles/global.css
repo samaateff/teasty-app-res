@@ -1,56 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 @font-face {
-  font-family: Al-jazeera;
-  src: url(/Al-Jazeera-Arabic-Regular.ttf);
+	font-family: Al-jazeera;
+	src: url(/Al-Jazeera-Arabic-Regular.ttf);
 }
-:root{
-    --primary-bg-color:#9F3639; 
-    --secondary-bg-color:#A6433A;
-    --color-white: #FFFFFF;
-    --primary-color:#9F3639;
-    --secondary-color:#F46D3B;
+:root {
+	--primary-bg-color: #9f3639;
+	--secondary-bg-color: #a6433a;
+	--color-white: #ffffff;
+	--primary-color: #9f3639;
+	--secondary-color: #f46d3b;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 html {
-  font-size: 62.5%;  /*1rem = 10px*/
+	font-size: 62.5%; /*1rem = 10px*/
 }
 @media (max-width: 1000px) {
-  html {
-      font-size: 50%;
-  }
+	html {
+		font-size: 50%;
+	}
 }
 @media (max-width: 800px) {
-  html {
-      font-size: 40%;
-  }
+	html {
+		font-size: 40%;
+	}
 }
 body {
-    font-family: 'Fjalla One', Al-jazeera , sans-serif;
-    /* font-weight: 300; */
-    font-style: normal;
-    color: var(--color-white);
-    background: linear-gradient(to right, var(--primary-bg-color) 50%, var(--secondary-bg-color) 50%);
-    background-size: cover; /* Ensure the gradient covers the entire area */
+	font-family: 'Fjalla One', Al-jazeera, sans-serif;
+	/* font-weight: 300; */
+	font-style: normal;
+	color: var(--color-white);
+	background: linear-gradient(to right, var(--primary-bg-color) 50%, var(--secondary-bg-color) 50%);
+	background-size: cover; /* Ensure the gradient covers the entire area */
 }
 
 body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('/overlay.png');
-    background-size: cover;
-    background-blend-mode: overlay;
-    opacity: 0.65; /* Adjust the opacity of the image */
-    z-index: -1; /* Ensure the image is behind the content */
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url('/overlay.png');
+	background-size: cover;
+	background-blend-mode: overlay;
+	opacity: 0.65; /* Adjust the opacity of the image */
+	z-index: -1; /* Ensure the image is behind the content */
 }
