@@ -1,0 +1,40 @@
+.changeLang{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.changeLangTwo{
+    position: relative;
+}
+.changeLang ul{
+    position: absolute;
+    list-style: none;
+    background-color: var(--color-white);
+    color: var(--primary-color);
+    right: 0;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    top: 7rem;
+}
+.changeLang ul li{
+padding: 1rem 3rem;
+transition: background 0.2s;
+border-radius: 0.5rem;
+cursor: pointer;
+}
+.changeLang ul li:hover{
+    background: radial-gradient(50% 50% at 50% 50%, #D94108 0%, #BB4042 100%);
+    color: var(--color-white);
+}
+.changeLangTwo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+svg{
+    display: inline-block;
+    width: 1.7rem;
+    height: 1.7rem;
+    margin: 0 0.5rem;
+}

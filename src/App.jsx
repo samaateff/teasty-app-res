@@ -6,6 +6,8 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import DailyOffers from './pages/DailyOffers';
 import Location from './pages/Location';
+import SignUp from './pages/SignUp';
+import LogIn from './pages/LogIn';
 
 function App() {
 	return (
@@ -19,6 +21,8 @@ function App() {
           <Route path='contactus' element={<ContactUs />} />
           <Route path='dailyoffers' element={<DailyOffers />} />
           <Route path='location' element={<Location />} />
+          <Route path='signup' element={<SignUp />} />
+          <Route path='login' element={<LogIn />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>
