@@ -1,12 +1,15 @@
 import { Link, useNavigate } from 'react-router-dom';
+
+import styles from './navbar.module.css';
+
 import Logo from './Logo';
 import ChangeLanguage from './ChangeLanguage';
-import styles from './navbar.module.css';
-import BellIcon from './icons/BellIcon';
-import CartIcon from './icons/CartIcon';
-import FavIcon from './icons/FavIcon';
-import UserIcon from './icons/UserIcon';
-import FoodIcon from './icons/FoodIcon';
+import NotifactionNav from './NotifactionNav';
+import FavoriteNav from './FavoriteNav';
+import CartNav from './CartNav';
+import UserNav from './UserNav';
+import MenuBtnNav from './MenuBtnNav';
+
 function Navbar() {
 	const navigate = useNavigate();
 	return (
@@ -44,23 +47,11 @@ function Navbar() {
 						log in
 					</button>
 				</div> */}
-
-				<div className={styles.userIcons}>
-					<BellIcon />
-				</div>
-				<div className={styles.userIcons}>
-					<CartIcon />
-				</div>
-				<div className={styles.userIcons}>
-					<FavIcon />
-				</div>
-				<div className={styles.userIcons}>
-					<UserIcon />
-				</div>
-				<div className={styles.checkMenuBtn}>
-					<FoodIcon />
-					<span>CHECK OUR MENU</span>
-				</div>
+				<NotifactionNav />
+				<CartNav />
+				<FavoriteNav />
+				<UserNav />
+				<MenuBtnNav />
 			</div>
 		</nav>
 	);
