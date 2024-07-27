@@ -2,9 +2,9 @@ import { createSlice } from '@reduxjs/toolkit';
 
 const fakeUser = {
   id: 1,
-  name: 'John Doe',
-  email: 'john.doe@example.com',
-  password: 'password123',
+  name: 'sama',
+  email: 'sama@example.com',
+  password: '1234',
   cart: [
     {
       id: 512,
