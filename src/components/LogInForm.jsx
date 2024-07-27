@@ -4,8 +4,8 @@ import { login } from '../Authentication/userSlice';
 import { useNavigate } from 'react-router-dom';
 
 function LogInForm() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('sama@example.com');
+  const [password, setPassword] = useState('1234');
   const dispatch = useDispatch();
   const { isAuthenticated } = useSelector((store) => store.user);
   const navigate = useNavigate();

@@ -1,131 +1,131 @@
 .navbar {
-	display: flex;
-	width: 90%;
-	background-color: rgba(255, 255, 255, 0.1);
-	border-radius: 2rem;
-	justify-content: space-between;
-	font-size: 1.4rem;
-	margin-top: 5rem;
-	text-transform: uppercase;
-	line-height: 1.76rem;
-	letter-spacing: -0.17px;
-	padding-left: 4rem;
+  display: flex;
+  width: 90%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2rem;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  margin-top: 5rem;
+  text-transform: uppercase;
+  line-height: 1.76rem;
+  letter-spacing: -0.17px;
+  padding-left: 4rem;
 }
 .links {
-	display: flex;
-	list-style-type: none;
-	gap: 4.5rem;
+  display: flex;
+  list-style-type: none;
+  gap: 4.5rem;
 }
 .links li {
-	padding: 5rem 0;
+  padding: 5rem 0;
 }
 .links li a {
-	text-decoration: none;
-	color: var(--color-white);
+  text-decoration: none;
+  color: var(--color-white);
 }
 .navleft,
 .navright {
-	display: flex;
+  display: flex;
 }
 .navleft {
-	/* width: 60%; */
-	/* justify-content: space-around; */
-	align-items: center;
-	gap: 5rem;
-	/* padding: 4rem 0; */
+  /* width: 60%; */
+  /* justify-content: space-around; */
+  align-items: center;
+  gap: 5rem;
+  /* padding: 4rem 0; */
 }
 
 .btnReg > button {
-	border-radius: 0.5rem;
-	padding: 1.5rem 2rem;
-	width: 10rem;
-	border: none;
-	outline: none;
-	color: var(--secondary-color);
-	box-shadow: 11px 31px 31.3px 0px #0000000d;
-	text-transform: uppercase;
-	transition: 0.2s;
-	cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+  width: 10rem;
+  border: none;
+  outline: none;
+  color: var(--secondary-color);
+  box-shadow: 11px 31px 31.3px 0px #0000000d;
+  text-transform: uppercase;
+  transition: 0.2s;
+  cursor: pointer;
 }
 .navright button:hover {
-	transform: translateY(-0.3rem);
+  transform: translateY(-0.3rem);
 }
 .logIn {
-	background: var(--color-white);
-	color: var(--secondary-color);
+  background: var(--color-white);
+  color: var(--secondary-color);
 }
 .signUp {
-	background: var(--primary-color);
+  background: var(--primary-color);
 }
 .checkMenuBtn {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background: radial-gradient(50% 50% at 50% 50%, #d94108 0%, #bb4042 100%);
-	border-radius: 2rem;
-	text-align: center;
-	padding: 0 2rem;
-	margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(50% 50% at 50% 50%, #d94108 0%, #bb4042 100%);
+  border-radius: 2rem;
+  text-align: center;
+  padding: 0 2rem;
+  margin: 0.5rem;
 }
 
 .btnReg {
-	align-self: center;
-	display: flex;
-	gap: 2rem;
-	padding-right: 2rem;
+  align-self: center;
+  display: flex;
+  gap: 2rem;
+  padding-right: 2rem;
 }
 
 .userIcons {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	padding: 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 0 1.5rem;
 }
 .userMenu {
-	position: absolute;
-	bottom: -18rem;
-	color: #000;
-	width: 30rem;
-	list-style: none;
-	display: flex;
-	flex-direction: column;
-	padding: 3rem 0;
-	/* background: #000; */
+  position: absolute;
+  top: 10rem;
+  color: #000;
+  width: 30rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
+  /* background: #000; */
 }
 
 .userMenu ul {
-	background-color: var(--color-white);
-	padding: 1rem;
-	border-radius: 0.5rem;
+  background-color: var(--color-white);
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 .userMenu li {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0.5rem;
-	color: var(--secondary-color);
-	transition: background 0.2s;
-	border-radius: 0.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  color: var(--secondary-color);
+  transition: background 0.2s;
+  border-radius: 0.5rem;
 }
 .userMenu li img {
-	border-radius: 0.5rem;
+  border-radius: 0.5rem;
 }
 .userMenu li div {
-	display: flex;
-	gap: 1rem;
+  display: flex;
+  gap: 1rem;
 }
 
 .userMenuLi {
-	align-items: center;
+  align-items: center;
 }
 .userMenu li:hover {
-	background: radial-gradient(50% 50% at 50% 50%, #d94108 0%, #bb4042 100%);
-	color: var(--color-white);
+  background: radial-gradient(50% 50% at 50% 50%, #d94108 0%, #bb4042 100%);
+  color: var(--color-white);
 }
 
 .userMenu li:hover svg path {
-	fill: var(--color-white);
+  fill: var(--color-white);
 }

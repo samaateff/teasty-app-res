@@ -22,6 +22,14 @@ const fakeUser = {
       discount: 2,
       quantity: 3,
     },
+    {
+      id: 515,
+      name: 'cheese burger',
+      img: '/Rectangle157.jpg',
+      price: 11.99,
+      discount: 2,
+      quantity: 3,
+    },
   ],
   favourites: [
     {
@@ -37,6 +45,7 @@ const fakeUser = {
       name: 'steak',
     },
   ],
+  notifications: [],
 };
 const initialState = {
   user: null,
