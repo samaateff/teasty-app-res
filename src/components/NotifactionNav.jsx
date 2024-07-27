@@ -19,42 +19,46 @@ function NotifactionNav() {
     >
       <BellIcon />
       {notificationsLength > 0 ? (
-        <span className={styles.cartNum}>
-          <sup>{notificationsLength}</sup>
+        <span className={styles.dot}>
+          <sup></sup>
         </span>
       ) : null}
       {droped && (
         <div className={styles.cartMenu}>
           <ul>
             {notificationsLength > 0 ? (
-              user.notifications.map((item) => (
-                <li key={item.id}>
-                  <div>
+              <>
+                {user.notifications.map((item) => (
+                  <li key={item.id}>
                     <div>
-                      <img src='/Rectangle157.jpg' />
-                    </div>
-                    <div className={styles.cartPrice}>
-                      <span>{item.name}</span>
-                      <span>
-                        {item.price}
-                        <span className={styles.priceDiscount}>
-                          {item.price + item.discount}
+                      <div>
+                        <img src='/Rectangle157.jpg' />
+                      </div>
+                      <div className={styles.cartPrice}>
+                        <span className={styles.cartPriceName}>
+                          {item.name}
                         </span>
-                      </span>
+                        <span>
+                          {item.price}
+                          <span className={styles.priceDiscount}>
+                            {item.price + item.discount}
+                          </span>
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                  <div>
-                    <TrashIcon />
-                  </div>
-                </li>
-              ))
+                    <div>
+                      <TrashIcon />
+                    </div>
+                  </li>
+                ))}
+                <div className={styles.cartBtns}>
+                  <button>VIEW CART</button>
+                  <button>CHECKOUT</button>
+                </div>
+              </>
             ) : (
               <div>no notification</div>
             )}
-            <div className={styles.cartBtns}>
-              <button>VIEW CART</button>
-              <button>CHECKOUT</button>
-            </div>
           </ul>
         </div>
       )}

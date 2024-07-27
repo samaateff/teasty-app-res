@@ -18,8 +18,16 @@
   /* background: #000; */
 
   & ul {
-    background-color: var(--color-white);
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 11px 31px 31.3px 0px rgba(0, 0, 0, 0.05);
     border-radius: 0.5rem;
+    // padding: 0 1rem;
+
+    & li {
+      box-shadow: 11px 31px 31.3px 0px rgba(0, 0, 0, 0.05);
+      padding: 3rem 0;
+      display: inline-block;
+    }
 
     & .cartBtns {
       display: flex;
@@ -40,8 +48,9 @@
       color: var(--secondary-color);
       transition: background 0.2s;
       border-radius: 0.5rem;
-      padding: 1rem;
-      margin: 1rem;
+      padding: 2rem;
+      margin: 1rem 2rem;
+      border: 1px solid rgba(244, 109, 59, 0.1);
 
       &:hover {
         background: radial-gradient(
@@ -51,7 +60,9 @@
         );
         color: var(--color-white);
       }
-
+      &:hover .cartPriceName {
+        color: var(--color-white);
+      }
       &:hover svg path {
         fill: var(--color-white);
       }
@@ -73,6 +84,8 @@
   flex-direction: column;
   align-self: center;
   justify-content: center;
+  border-right: 1px solid rgba(244, 109, 59, 0.28);
+  padding-right: 4rem;
 }
 
 .priceDiscount {
@@ -89,4 +102,16 @@
   position: absolute;
   top: 3.5rem;
   right: 1.3rem;
+}
+.dot {
+  position: absolute;
+  top: 4.5rem;
+  right: 1.5rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 100%;
+  background-color: var(--color-white);
+}
+.cartPriceName {
+  color: rgba(159, 54, 57, 1);
 }
