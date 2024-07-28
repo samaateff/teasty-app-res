@@ -1,21 +1,35 @@
 .sliderContainer {
-  //   position: relative;
-  margin: auto;
-  overflow: hidden;
-  width: 90%;
-  height: 500px;
-  & .slide {
-    // display: none;
-    // position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-  & .activeSlide {
-    // display: block;
-    opacity: 1;
-  }
+	width: 100%;
+	display: flex;
+	align-items: center;
+	overflow: hidden; /* Hide overflow for smooth scrolling */
+
+	.slidsContainer {
+		position: relative; /* Allows stacking slides on top of each other */
+		width: 100%;
+		height: 30rem; /* Fixed height for each slide */
+	}
+
+	.slide {
+		position: absolute; /* Stack slides on top of each other */
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: opacity 0.5s ease-in-out;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		flex-shrink: 0; /* Prevent shrinking */
+	}
+
+	.activeSlide {
+		opacity: 1; /* Show the active slide */
+	}
+
+	.sliderImg {
+		width: 30rem;
+		height: 30rem;
+	}
 }
