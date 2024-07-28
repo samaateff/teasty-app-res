@@ -1,10 +1,12 @@
-import Header from '../components/header/Header';
+// import Header from '../components/header/Header';
+import MySwiperSlide from '../components/MySwiperSlider';
 
 function Home() {
   return (
     <div>
       home
-      <Header />
+      {/* <Header /> */}
+      <MySwiperSlide />
     </div>
   );
 }
