@@ -16,8 +16,10 @@
   flex-direction: column;
   padding: 3rem 0;
   /* background: #000; */
+  z-index: 99;
 
   & ul {
+    padding-left: 0;
     background: rgba(255, 255, 255, 1);
     box-shadow: 11px 31px 31.3px 0px rgba(0, 0, 0, 0.05);
     border-radius: 0.5rem;

@@ -1,7 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-
 import styles from './navbar.module.css';
-
 import Logo from './Logo';
 import ChangeLanguage from './ChangeLanguage';
 import NotifactionNav from './NotifactionNav';

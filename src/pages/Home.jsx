@@ -1,12 +1,14 @@
-// import Header from '../components/header/Header';
-import MySwiperSlide from '../components/MySwiperSlider';
+import Header from '../components/header/Header';
+import MenuSection from './MenuSection';
+// import MySwiperSlide from '../components/MySwiperSlider';
 
 function Home() {
   return (
     <div>
       home
-      {/* <Header /> */}
-      <MySwiperSlide />
+      <Header />
+      {/* <MySwiperSlide /> */}
+      <MenuSection />
     </div>
   );
 }

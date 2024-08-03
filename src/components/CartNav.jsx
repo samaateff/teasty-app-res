@@ -6,11 +6,14 @@ import TrashIcon from './icons/TrashIcon';
 
 // import styles from './navbar.module.css';
 import styles from './cartl.module.scss';
+import { useNavigate } from 'react-router-dom';
 
 function CartNav() {
   const { user } = useSelector((store) => store.user);
   const [droped, setDroped] = useState(false);
-  const cartLength = user.cart.length;
+  const cartLength = user.cart.cartItems.length;
+  const navigate = useNavigate();
+  console.log(user.cart.cartItems);
   return (
     <div
       className={`${styles.cartIcons}`}
@@ -19,16 +22,14 @@ function CartNav() {
     >
       <CartIcon />
       {cartLength > 0 ? (
-        <span className={styles.cartNum}>
-          <sup>{cartLength}</sup>
-        </span>
+        <span className={styles.cartNum}>{cartLength}</span>
       ) : null}
       {droped && (
         <div className={styles.cartMenu}>
           <ul>
             {cartLength > 0 ? (
               <>
-                {user.cart.map((item) => (
+                {user.cart.cartItems.map((item) => (
                   <li key={item.id}>
                     <div>
                       <div>
@@ -52,7 +53,7 @@ function CartNav() {
                   </li>
                 ))}
                 <div className={styles.cartBtns}>
-                  <button>VIEW CART</button>
+                  <button onClick={() => navigate('/cart')}>VIEW CART</button>
                   <button>CHECKOUT</button>
                 </div>
               </>
